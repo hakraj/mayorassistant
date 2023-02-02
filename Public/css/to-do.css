@@ -1,0 +1,150 @@
+html{
+    background-color: #FBFBFB;
+    background-image: -webkit-linear-gradient(60deg, #2192FF 50%, #FBFBFB 50%);
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  h1 {
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .box {
+    max-width: 375px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #heading {
+    background-color: #2192FF;
+    text-align: center;
+    position: relative;
+  }
+
+  .option-icon {
+    font-size: 2rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 0.75rem;
+    color: #fff;
+  }
+  
+  .item {
+    position: relative;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+    padding-right: 1.5rem;
+  }
+  
+  .item:last-child {
+    border-bottom: 0;
+  }
+  
+  input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #2192FF;
+  }
+  
+  input[type="checkbox"] {
+    margin: 20px;
+  }
+  
+  p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #00204a;
+  }
+
+  button[name="delete"] {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+
+    position: absolute;
+    right: 2rem;
+    color: red;
+    cursor: pointer;
+  }
+
+  
+  form {
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+  button[name="title"] {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #2192FF;
+    color: #fff;
+    font-size: 30px;
+    /* padding-bottom: 2px; */
+    border-width: 0;
+    cursor: pointer;
+  }
+  
+  input[type="text"] {
+    font-family: inherit;
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 280px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #2192FF;
+  }
+  
+  ::placeholder {
+    color: grey;
+    opacity: 1;
+  }
+
+  
+  footer {
+    /* font-size: 12px;
+    font-weight: lighter; */
+    color: white;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  @media only screen and (max-width:769px) {
+    body {
+        padding: 0 5vw;
+    }
+
+    button[name="title"] {
+        min-height: 40px;
+        width: 40px;
+        font-size: 24px;
+      }
+    
+
+    input[type="text"] {
+        width: 80%;
+    }
+
+    input[type="checkbox"] {
+      margin: 12px;
+    }
+    
+
+
+  }
+  

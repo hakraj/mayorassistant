@@ -1,0 +1,155 @@
+
+
+html, body {
+    text-align: center;
+    min-height: 100vh;
+    overflow: auto;
+
+    /* font-family: 'Courier New', Courier, monospace; */
+
+}
+
+
+.weather-today {
+    background-color: #2192FF;
+    margin: 5vh 5vw 4vh;
+    border-radius: 1rem;
+    min-height: 25vh;
+    color: #fff;
+
+    text-align: start;
+}
+
+.description {
+    width: 80%;
+    line-height: 1;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.temp {
+    font-size: 2.75rem;
+    margin: 1rem 1rem 1rem 0;
+    font-weight: 700;
+}
+
+.extra {
+    background-color: #fff;
+    margin: 0 5vw ;
+    border-radius: 1rem;
+    min-height: 15vh;
+}
+
+.forecast-div {
+    background-color: #fff;
+    margin: 0 5vw ;
+    border-radius: 1rem;
+    min-height: 25vh;
+
+}
+
+
+.forecast {
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16%;
+    gap: 5%;
+}
+
+
+.forecast h4 {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.forecast .forecast-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.forecast p {
+    font-size: 13px;
+}
+
+@media only screen and (max-width:350px) {
+
+    .temp {
+        margin-top: 2rem;
+        font-size: 2.25rem;
+    }
+
+    .feels-like {
+        font-size: 15px;
+    }
+
+    .description {
+        padding-left: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:769px) {
+
+    .cityName {
+        font-size: 1.75rem;
+    }
+
+    .temp {
+        padding-top: 1rem;
+        font-size: 4rem;
+        font-weight: 900;
+    }
+    
+    .feels-like {
+        font-size: 1.5rem;
+    }
+
+    .weatherImg {
+        width: 10rem;
+    }
+
+    .description {
+        font-size: 2.25rem;
+        padding-left: 2rem;
+        font-weight: 700;
+    }
+
+    .forecast h4 {
+        font-size: 1.5rem;
+    }
+
+    .forecast p {
+        font-size: 1.25rem;
+    }
+    
+}
+
+@media only screen and (min-width:990px) {
+    header {
+        width: 90vw;
+        margin: auto;
+    }
+    .main {
+        display: flex;
+        width: 90vw;
+        margin: 0 auto 5rem;
+        align-items: center;
+    }
+
+    .today {
+        width: 50%;
+    }
+
+    .weather-today {
+        flex-wrap: wrap;
+    }
+
+    .forecast-div {
+        height: fit-content;
+    }
+
+}
+
+
+/* helper */
+.hide {
+    display: none;
+}

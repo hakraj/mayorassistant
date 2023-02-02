@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Newsletter Signup page">
+
+    <title>Mayor - Your Best Guide</title>
+
+    <!-- bootstrap stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/675cd5c11c.js" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid navbar-container">
+        <a class="navbar-brand fw-bold fs-3" href="#">Mayor</a>
+        <button class="navbar-toggler btn-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#info-div" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="info-div">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Get-started">Get Started</a>
+            </li>
+            <li class="nav-item dropdown">
+              <span class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">What can i do</span>
+              <ul class="bg-light dropdown-menu">
+                <li><a class="dropdown-item" href="/features#weather">Weather</a></li>
+                <li><a class="dropdown-item" href="/features#map">Maps</a></li>
+                <li><a class="dropdown-item" href="/features#to-do">To-do</a></li>
+                <li><a class="dropdown-item" href="/features#search">Quick search</a></li>
+                <li><a class="dropdown-item" href="/features#games">Fun and facts</a></li>
+                <li><a class="dropdown-item" href="/features#communicate">Communicate</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Support</a>
+            </li>
+          </ul>
+          <form action="/" method="post">
+            <button name="form"  type="submit" value="signup" class="btn btn-outline-primary btn-sm me-2">Sign up</button>
+            <button name="form" type="submit" value="login" class="btn btn-outline-success btn-sm">Login</button>
+          </form>
+        </div>
+      </div>
+    </nav>    
+  </header>
+  
+  <main>
+
+    <!-- Carousel Section -->
+    <section>
+      <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid main-item">
+  
+              <div class="row">
+                <div class="col-8 col-lg-7 main-img-div">
+                  <img class="main-img" src="images/main/Develop.jpg" alt="desk-setup-img">
+                </div>
+                <div class=" col-4 col-lg-5 main-heading">
+                  <h1>Develop your Lifestyle</h1>
+                </div>
+              </div>
+  
+              <div class="main-info">
+                <p>Create a itinerary, improve your lifestyle with our assistant</p>
+                <a class="btn btn-lg btn-dark" href="/features">Discover More</a>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="carousel-item">
+            <div class="container-fluid main-item">
+  
+              <div class="row">
+                <div class="col-8  col-lg-7 main-img-div">
+                  <img class="main-img" src="images/main/Learn.jpg" alt="learn-img">
+                </div>
+                <div class="col-4 col-lg-5 main-heading">
+                  <h1>Learn with Mayor</h1>
+                </div>
+              </div>
+  
+              <div class="main-info">
+                <p>Hi Mayor, what's Okafor's law?</p>
+                <a class="btn btn-lg btn-dark" href="/features">Learn More</a>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <div class="container-fluid main-item">
+  
+              <div class="row">
+                <div class="col-8 col-lg-7 main-img-div">
+                  <img class="main-img" src="images/main/Explore.jpg" alt="explore-img">
+                </div>
+                <div class="col-4 col-lg-5 main-heading">
+                  <h1>Explore with Mayor</h1>
+                </div>
+              </div>
+  
+              <div class="main-info">
+                <p>Hi Mayor, what's the weather like in Paris?</p>
+                <a class="btn btn-lg btn-dark" href="/features">Explore More</a>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="carousel-item ">
+            <div class="container-fluid main-item">
+  
+              <div class="row">
+                <div class="col-8  col-lg-7 main-img-div">
+                  <img class="main-img" src="images/main/Direction.webp" alt="travel-img">
+                </div>
+                <div class="col-4 col-lg-5 main-heading">
+                  <h1>Connect with Mayor</h1>
+                </div>
+              </div>
+  
+              <div class="main-info">
+                <p>Hi Mayor, text Mom i'll be there in 15 minutes.</p>
+                <a class="btn btn-lg btn-dark" href="/features">Connect More</a>
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+  
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section>
+      <div class="features">
+        <h2>Discover What Mayor is all about.</h2>
+        <p><a href="/features">See more</a> on what activities and task can be done easily using Mayor.</p>
+
+        <div class="features-img">
+          <div>
+            <a href="/features#weather">
+              <i class="fa-solid fa-2x fa-cloud-sun-rain mb-3"></i>
+              <p>See weather forecast</p>
+            </a>  
+          </div>
+          <div>
+            <a href="/features#to-do">
+              <i class="fa-solid fa-2x fa-list-check mb-3"></i>
+              <p>Create a to-do list</p>
+            </a>
+          </div>
+          <div>
+            <a href="/features#communicate">
+              <i class="fa-solid fa-2x fa-comments mb-3"></i>
+              <p>Stay in touch</p>
+            </a>
+          </div>
+          <div>
+            <a href="/features#search">
+              <i class="fa-solid fa-2x fa-magnifying-glass mb-3"></i>
+              <p>Make quick searches</p>
+            </a>
+          </div>
+          <div class="item-5">
+            <a href="/features#games">
+              <i class="fa-solid fa-2x fa-gamepad mb-3"></i>
+              <p>Fun and facts</p>
+            </a>
+          </div>
+          <div class="item-6">
+            <a href="/features#map">
+              <i class="fa-solid fa-2x fa-map-location-dot mb-3"></i>
+              <p>Get directions</p>
+            </a>
+          </div>
+
+        </div>
+  
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info">
+      <div class="info col-lg-8 mx-auto">
+        <img src="images/shield.png" alt="secure-icon" width="75" class="mb-3" >
+        <h2 class="mb-3">We Keep your information secure.</h2>
+        <p>When you use Mayor, you trust us with your data and it's our responsibility to protect and respect it. Privacy is personal. That’s why we build simple privacy controls to help you choose what’s right for you.</p>
+      </div>
+    </section>
+
+    <!-- Call-to-action Section -->
+    <section id="Get-started">
+      <div class=" py-5 my-5 text-center cta">
+        <img class="d-block mx-auto mb-4" src="" alt="" width="72" height="57">
+        <h1 class="display-5 fw-bold">Get Started Today.</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="mb-4">Quickly fix your schedules with Mayor, the world’s most efficient assistant.</p>
+          <form action="/" method="post">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button name="form" type="submit" value="signup" class="btn btn-primary btn-lg px-4 gap-3">Sign up</button>
+              <button name="form" type="submit" value="login" class="btn btn-outline-success btn-lg px-4">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- Footer Section -->
+  <section  id="footer" class="py-1">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-baseline py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <img src="" alt="logo-img">
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 hak_raj</span>
+        </div>
+        
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#"><img src="images/footer/twitter.svg" alt="facebook-img" width="24px" height="24px"></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><img src="images/footer/linkedin.svg" alt="facebook-img" width="24px" height="24px"></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><img src="images/footer/facebook.svg" alt="facebook-img" width="24px" height="24px"></a></li>
+        </ul>
+      </footer>
+    </div>    
+  </section>
+
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>

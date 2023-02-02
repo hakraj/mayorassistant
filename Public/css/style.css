@@ -1,0 +1,308 @@
+/***Yoo**/
+
+:root {
+    --btn-toggler-focus-width: 0.125rem;
+}
+
+html, body {
+    overflow: auto;
+}
+
+body {
+    text-align: center;
+}
+
+
+main > section {
+    margin-bottom: 5rem;
+}
+.navbar {
+    box-shadow: 0 4px hsla(249, 10%, 26%, 0.1) ;
+    text-align: start;
+
+}
+
+.navbar-container {
+    width: 95%;
+}
+.btn-toggler {
+    border: none;
+}
+
+.btn-toggler:focus {
+    box-shadow: 0 0 0 var(--btn-toggler-focus-width);
+
+}
+
+.dropdown > ul {
+    border: none;
+}
+
+
+
+/* Carousel Main */
+
+.main-item {
+    padding: 0 5vw 0 0;
+    min-height: fit-content;
+}
+
+.main-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-heading {
+    display: flex;
+    align-items: center;
+
+}
+
+.main-heading > h1 {
+    font-weight: 700;
+
+}
+
+.main-info {
+    margin: 3rem 0 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    padding: 0 2.5vw 0 7.5vw;
+}
+
+.carousel-control-prev,.carousel-control-next {
+    display: none;
+}
+
+.features {
+    padding: 0 12.5%;
+}
+
+.features a {
+    text-decoration: none;
+}
+
+
+.features-img {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 9%;
+    row-gap: 1.5rem;
+}
+
+.features-img > div {
+    padding: 1.25rem;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    background-color: hsla(0, 0%, 0%, 0.1) ;
+    height: 33vw;
+    width: 100%;
+
+    transition: box-shadow 0.5s;
+}
+
+.features-img > div:hover {
+    box-shadow: 3px 3px 6px  hsla(0, 0%, 0%, 0.25) ;
+}
+
+.features-img a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.features-img p {
+    font-size: 14px;
+}
+
+.info, .cta {
+    padding: 0 10%;
+}
+
+#info {
+    background-color: hsla(0, 0%, 0%, 0.05);
+    padding: 3rem 0;
+}
+
+#footer {
+    background-color: hsla(0, 0%, 0%, 0.5) ;
+}
+
+
+
+
+
+/* FEATURES PAGE */
+
+.features-intro {
+    width: 90%;
+    margin: auto;
+}
+
+.learn {
+    background-color: hsla(0, 0, 0, 0.1);
+    text-align: start;
+    width: 90vw;
+    display: grid;
+    row-gap: 2rem;
+}
+
+.card {
+    box-sizing: border-box;
+}
+
+
+/* helper */
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width:350px) {
+    .main-item {
+        padding: 0;
+    }
+
+    .main-heading {
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    .main-info {
+        margin: 0;
+        margin-bottom: 3.5rem;
+        padding: 0 10%;
+    }
+
+    .features-img > div {
+        padding: 1rem;
+    }
+
+    .features-img p {
+        font-size: 11px;
+    }        
+    
+}
+
+@media only screen and (min-width:460px) and (max-width:989px) {
+    .features-img {
+        grid-template-columns:30% 30% 30%;
+
+        column-gap: 5%;
+        row-gap: 2.5rem;   
+    }
+
+    .features-img > div {
+        height: 21vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* FEATURES PAGE */
+    .learn {
+        display: grid;
+        grid-template-columns: 45% 45% ;
+
+        column-gap: 10%;
+        row-gap: 2rem; 
+        
+        width: 80vw;
+    }
+
+
+    
+}
+
+
+@media only screen and (min-width: 990px) {
+    .dropdown > ul {
+        border: solid 1px;
+    }
+
+    .main-item {
+        margin-bottom: 4rem;
+    }
+
+    .main-heading {
+        align-items: flex-end;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main-heading > h1 {
+        margin-bottom: 2rem;
+    }
+
+    .main-info {
+        align-self: flex-start;
+        padding: 0 10%;
+        margin: 0;
+    }
+
+    .carousel-control-prev,.carousel-control-next {
+        display: block;
+        width: 5vw;
+    }
+    
+
+    .features {
+        padding: 0 15%;
+    }
+    
+    .features-img {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+
+        column-gap: 5%;
+        row-gap: 2.5rem;   
+    }
+
+    .item-5 {
+        grid-column: 2 / 3;
+    }
+
+    .item-6 {
+        grid-column: 3 / 4;
+    }
+
+    .features-img > div {
+        padding: 2rem;
+        height: 15vw;
+    }
+
+    #info {
+        padding: 7rem 0;
+    }
+
+    /* FEATURES PAGE */
+
+    .intro-img > img {
+        width: 170px;
+    }
+
+    .intro-text {
+        text-align: start;
+        padding-right: 5vw;
+    }
+
+    .learn {
+        grid-template-columns: 30% 30% 30% ;
+
+        column-gap: 5%;
+        row-gap: 2rem; 
+        
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .features-img > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
